@@ -1,0 +1,423 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #131511;
+}
+
+*:focus {
+  outline: none;
+  transition: .1s;
+}
+
+*:hover {
+  transition: .1s;
+}
+
+body {
+  background-color: #F2F1E8;
+  min-height: 100vh;
+}
+
+a {
+  color: #968772;
+}
+
+a:hover {
+  color: #967343;
+}
+
+
+main {
+  padding-top: 120px;
+  overflow: auto;
+}
+
+header {
+  text-align: center;
+  font-family: 'Merriweather';
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+
+h1 {
+  font-size: 62px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: 'Merriweather';
+  font-weight: normal;
+}
+
+h4 {
+  color: white;
+  font-size: 19px;
+  font-weight: lighter;
+  font-family: lora;
+  font-family: 'Merriweather';
+  font-weight: normal;
+}
+
+p {
+  font-family: 'Merriweather';
+  line-height: 45px;
+  font-size: 18px;
+  color: #131511;
+  letter-spacing: .25px;
+}
+
+blockquote {
+  padding: 20px;
+  margin: 50px 20px 50px 0px;
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'Merriweather';
+  color: #333;
+  border-left: solid 1px;
+  line-height: 35px;
+  font-weight: lighter;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  height: 80px;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  align-self: center;
+  font-family: 'roboto', 'sans serif';
+  color: #2B2F26;
+}
+
+nav a:hover {
+  color: #CD5D67;
+}
+
+.active {
+  color: #968772;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-image: url('images/bent-creek-logo.png');
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  line-height: 80px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+#about {
+  padding: 0px 100px 0px 100px;
+}
+
+
+.collections {
+  padding-bottom: 30px;
+}
+
+.category {
+  margin: 10px;
+  display: flex;
+  align-items:flex-start;
+  flex-direction: column-reverse;
+}
+
+#row-1 {
+  display: flex;
+  justify-content: center;
+}
+
+#category-1 {
+  background-image: url('images/product-1.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  width: 770px;
+}
+
+#category-2 {
+  background-image: url('images/product-2.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  width: 250px;
+}
+
+#category-3 {
+  background-image: url('images/product-3.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  width: 250px;
+}
+
+#row-2 {
+  display: flex;
+  justify-content: center;
+}
+
+#category-4 {
+  background-image: url('images/product-4.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 270px;
+  width: 250px;
+}
+
+#category-5 {
+  background-image: url('images/product-5.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 270px;
+  width: 250px;
+}
+
+#category-6 {
+  background-image: url('images/product-6.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 270px;
+  width: 500px;
+}
+
+#category-7 {
+  background-image: url('images/product-7.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 270px;
+  width: 250px;
+}
+
+.title {
+  font-family: 'Merriweather';
+  color: white;
+}
+
+.category h4 {
+  background-color: #2B2F26;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.sign-up-form {
+  width: 620px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.sign-up-form h4 {
+  padding-top: 20px;
+  color: black;
+  font-weight: normal;
+}
+
+input {
+  border-bottom: solid #968772;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  align-self: center;
+  width: 95%;
+  font-family:'roboto', 'sans serif';
+  font-size: 18px;
+  color: #7C818A;
+  padding-bottom: 5px;
+}
+
+input:focus {
+  border-bottom: solid #967343;
+}
+
+.newsletter {
+  background-image: url('images/background-2.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+#signupButton {
+  background-color: #968772;
+  width: 20%;
+  padding: 15px 5px 15px 5px;
+  color: #F2F1E8;
+  border: none;
+}
+
+#signupButton:hover {
+  background-color: #967343;
+  color: #FFFFFF;
+}
+#emailInput {
+  padding-top: 40px;
+}
+
+footer {
+  background-color: #2B2F26;
+  height: 100px;
+}
+
+footer h4 {
+  color: white;
+  line-height: 100px;
+  text-align: left;
+  font-family: 'Merriweather';
+  padding-left: 20px;
+}
+
+.room-to-grow {
+  background-image: url('images/background-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.room-to-grow h1 {
+  line-height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  font-size: 90px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  margin-top: 20px;
+}
+
+.top-img {
+  width: 180px;
+  height: 140px;
+  background-image: url('images/birdhouse.jpg');
+  background-position: top;
+  background-size: cover;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.about-info h3 {
+  padding-bottom: 10px;
+}
+
+.top-section {
+  padding-bottom: 100px;
+  padding-left:   15%;
+  padding-right: 15%;
+}
+
+.bottom-section {
+  padding-top: 120px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 50px;
+  display: flex;
+  margin-right: 30px;
+}
+
+.bottom-content {
+  margin-right: 30px;
+}
+
+.aside-img {
+  background-image: url('images/background-1.jpg');
+  width: 180px;
+  height: 140px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 60px;
+}
+
+aside p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 10px;
+  font-family: 'Merriweather';
+}
+
+.monthly-options {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.monthly-options h3 {
+  padding-bottom: 40px;
+}
+
+table {
+  font-size: 18px;
+  padding: 10px;
+  border-collapse: collapse;
+  margin-bottom: 80px;
+  font-family: 'Merriweather';
+}
+
+td {
+  padding: 15px;
+  border: solid 1px;
+}
+
+tr:nth-child(odd) {
+  background: #F2EADC;
+}
+
+th {
+  border: solid 1px;
+  padding: 15px;
+  background: #F2F1E8;
+}
+
+#facilities  {
+  min-height: 100vh;
+}
